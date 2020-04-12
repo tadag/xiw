@@ -9,7 +9,7 @@ const {CookieAccessInfo, CookieJar, Cookie} = cookiejar
 
 let config = {
     httpprefix: 'https', port: 443,
-    serverName: 'xiw.herokuapp.com',
+    serverName: 'xisi.herokuapp.com',
 }
 if (process.env.herokuAddr) {
     config.serverName = process.env.herokuAddr
