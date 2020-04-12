@@ -1,0 +1,51 @@
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="/style.css"/>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#addrAccess").click(function(){
+    let v = $("#address").val();
+    v = v.replace(':/', '')
+    // alert(`value=/${v}`)
+    window.location.href = `/${v}`
+    });
+});
+</script>
+<header class="header-banner">
+  <kiv class="container-width">
+    <div class="logo-container">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="logo-right-container">
+      <div class="logo">
+      </div>
+    </div>
+    <br />
+    <form class="lead-title">
+      <p><input class="lead-title" type="text" id="address" value="https://pincong.rocks">
+        <input id="addrAccess" class="lead-title button1" type="button" onclick="onsubmit" value="访问网站"/>
+      </p>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/www.google.com'" value="Google搜索"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/zh.wikipedia.org'" value="维基百科"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/www.bbc.com/zhongwen/simp'" value="BBC新闻"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/cn.reuters.com/'" value="路透社中文"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/http/news.creaders.net/headline/'" value="万维读者"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/www.wenxuecity.com'" value="文学城"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/https/www.6parknews.com'" value="留园网"/>
+      <input class="lead-title button1" type="button" onclick="window.location.href='/http/www.iask.ca/index.html'" value="加拿大家园网"/>
+    </form>
+  </kiv>
+  <div class="container-width">
+    <div class="logo-container"> </div>
+    <div class="c9130">
+      <br/>
+      <br/>
+      <div class="clearfix">
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</header>
